@@ -16,17 +16,10 @@ console.log(4 == '4')
 console.log(4 === '4')
 
 //year
-let year = new Date ()
-date = new Date ()
-myYear =  date.getYear()
-
-console.log(myYear)
+let year = new Date();
+console.log(year.getFullYear());
 //month
-let myMonth = date.getMonth()
 
-console.log(myMonth)
-// today's date
-console.log(date)
 //day
 let day = new Date ()
 day = day.getDay()
@@ -53,3 +46,17 @@ if (MyMonth == 31) {
     console.log("Febuary has 28 days.")
 }
 
+let dayToday = new Date();
+let todayDate = dayToday.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+console.log(todayDate);
+
+
+let today = day
+if (today == 2){
+    console.log("today is tueday")
+
+}
+
+else{
+    console.log("today can be any day")
+}
