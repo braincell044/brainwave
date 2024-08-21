@@ -48,12 +48,12 @@ if (MyMonth == 31) {
 
 let dayToday = new Date();
 let todayDate = dayToday.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
-console.log(todayDate);
+console.log("Today's date is "+todayDate );
 
 
 let today = day
-if (today == 2){
-    console.log("today is tueday")
+if (today == 3){
+    console.log("today is wednesday")
 
 }
 
